@@ -61,7 +61,7 @@ apns{
 
  CERTIFICATE_PASSWORD_FAIL 口令不正确
 
- SSL_CONNECT_FAIL 链接失败
+ SSL_CONNECT_FAIL 连接失败
 
 
 ### 例子
