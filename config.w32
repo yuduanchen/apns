@@ -1,0 +1,8 @@
+// $ Id: $
+// vim:ft=javascript
+
+ARG_ENABLE('apns' , 'apns title', 'no');
+if (PHP_APNS == "yes") {
+  EXTENSION("apns", "apns.c");
+  AC_DEFINE("HAVE_APNS", 1, "apns support");
+}

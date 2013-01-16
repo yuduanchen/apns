@@ -1,0 +1,6 @@
+<!ENTITY reference.apns.reference SYSTEM './apns/reference.xml'>
+<!ENTITY reference.apns.constants SYSTEM './apns/constants.xml'>
+<!ENTITY reference.apns.ini SYSTEM './apns/ini.xml'>
+<!ENTITY reference.apns.configure SYSTEM './apns/configure.xml'>
+<!ENTITY reference.apns.functions.check-ssl-crefile SYSTEM './apns/functions/check-ssl-crefile.xml'>
+<!ENTITY reference.apns.functions SYSTEM './functions.xml'>

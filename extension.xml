@@ -1,0 +1,61 @@
+<extension name="apns">
+	<summary>apns title</summary>
+	<description>
+        description
+	</description>
+	<maintainers>
+		<maintainer>
+			<user>chenyuduan</user>
+			<name>chenyuduan</name>
+			<email>thisduan@gmail.com</email>
+			<role>lead</role>
+		</maintainer>
+	</maintainers>
+	<release>
+		<version>1.0</version>
+		<date>2013-01-03</date>
+		<state>stable</state>
+		<notes>update</notes>
+	</release>
+	<license>PHP</license>
+ <!--logo src="cs_logo.jpg" mimetype="image/jpg" ></logo-->
+	<constants>
+		<constant name="apns_version"   type="int"    value="1.0">
+		</constant>
+	</constants>
+    <phpini name="gateway" type="string" value="ssl://gateway.push.apple.com:2195 or ssl://gateway.sandbox.push.apple.com:2195" onupdate="OnUpdateLong" access="all">
+    </phpini>
+	<function name="check_ssl_crefile">
+		<proto>void check_ssl_crefile(string x)</proto>
+		<code>
+			return;
+		</code>
+	</function>
+	<class name="apns">
+		<function name="setcrefile">
+			<proto>void setcrefile(string x)</proto>
+			<code>php_printf(x);</code>
+		</function>
+		<function name="settoken">
+			<proto>void settoken(string x)</proto>
+			<code>php_printf(x);</code>
+		</function>
+		<function name="sslurl">
+			<proto>void sslurl(string x)</proto>
+			<code>php_printf(x);</code>
+		</function>
+		<function name="sslurl">
+			<proto>void sslurl(string x)</proto>
+			<code>php_printf(x);</code>
+		</function>
+		<function name="passphrase">
+			<proto>void passphrase(string x)</proto>
+			<code>php_printf(x);</code>
+		</function>
+		<function name="send">
+			<proto>void send(string x)</proto>
+			<code>php_printf(x);</code>
+		</function>
+	</class>
+
+</extension>

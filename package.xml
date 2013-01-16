@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!DOCTYPE package SYSTEM "http://pear.php.net/dtd/package-1.0">
+<package>
+
+  <name>apns</name>
+  <summary>apns title</summary>
+  <description>
+        description
+  </description>
+
+  <license>PHP</license>
+
+  <maintainers>
+    <maintainer>
+      <user>chenyuduan</user>
+      <name>chenyuduan</name>
+      <email>thisduan@gmail.com</email>
+      <role>lead</role>
+    </maintainer>
+  </maintainers>
+
+  <release>
+    <version>1.0</version>
+    <state>stable</state>
+    <notes>update</notes>
+    <date>2013-01-03</date>
+  </release>
+  <changelog>
+
+  </changelog>
+  <deps>
+    <dep type="php" rel="ge" version="5.0.0"/>
+  </deps>
+
+  <filelist>
+    <dir name="/">
+      <file role='doc' name='CREDITS'/>
+      <file role='src' name='config.m4'/>
+      <file role='src' name='apns.dsp'/>
+      <file role='src' name='config.w32'/>
+      <file role='src' name='apns.c'/>
+      <file role='src' name='php_apns.h'/>
+      <dir name="tests">
+        <file role='test' name='check_ssl_crefile.phpt'/>
+        <file role='test' name='apns__setcrefile.phpt'/>
+        <file role='test' name='apns__settoken.phpt'/>
+        <file role='test' name='apns__sslurl.phpt'/>
+        <file role='test' name='apns__passphrase.phpt'/>
+        <file role='test' name='apns__send.phpt'/>
+      </dir>
+    </dir>
+  </filelist>
+</package>

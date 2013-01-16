@@ -1,4 +1,83 @@
 apns
 ====
 
-apns
+为 IOS APNS 消息推送 所开发的 PHP扩展
+
+## 安装APNS
+
+## 系统要求
+
+>  php5.3.5 以上
+
+
+```
+$/path/to/phpize
+
+$./configure
+
+$make && make install
+
+
+```
+
+## 文档
+
+
+
+###类摘要
+```c
+apns{
+    /* 变量 */
+    public static string $passphrase = "" ;//密码
+    public static string $certificate = "" ;//ssh授权文件
+    public static string $gateway = "gateway.push.apple.com:2195" ;//IOS APNS 服务器推送接口
+    /* 方法 */
+
+    /***
+     * 推送信息
+     * @param string $token
+     * @param string $message
+     */
+    public static send(string $token,string $message);
+}
+
+```
+### 返回值
+
+1 成功
+
+0 失败
+
+### 异常类型
+
+ SSL_INIT_FAIL 初始化失败
+
+ CERTIFICATE_NOT_FOUNT 找不到授权文件
+
+ CERTIFICATE_PASSWORD_FAIL 口令不正确
+
+ SSL_CONNECT_FAIL 链接失败
+
+
+### 例子
+
+```php
+<?php
+apns::$passphrase ="xxxxx";   //password
+apns::$certificate="./ck.pem"; //certificate file
+try{
+    echo apns::send(str_replace(" ","","811111111111111111111111111111")),"{\"aps\":{\"alert\":\"test\",\"badge\":1}}");
+}catch(exception $e){
+    echo $e->getMessage();
+}
+?>
+```
+
+### 更多问题
+
+详解 http://www.cydphp.cn
+
+
+
+
+
