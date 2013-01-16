@@ -1,7 +1,7 @@
 apns
 ====
 
-为 IOS APNS 消息推送 所开发的 PHP扩展
+为  APNS(Apple Push Notification Service) 消息推送 所开发的 PHP扩展
 
 ## 安装APNS
 
