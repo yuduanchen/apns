@@ -34,6 +34,11 @@ apns{
     /* 方法 */
 
     /***
+     * 连接apple apns服务
+     */
+    public static connect();
+
+    /***
      * 推送信息
      * @param string $token
      * @param string $message
@@ -66,7 +71,10 @@ apns{
 apns::$passphrase ="xxxxx";   //password
 apns::$certificate="./ck.pem"; //certificate file
 try{
-    echo apns::send(str_replace(" ","","811111111111111111111111111111")),"{\"aps\":{\"alert\":\"test\",\"badge\":1}}");
+    apns::connect();
+    $token=str_replace(" ","","811111111111111111111111111111");
+    echo apns::send(token,"{\"aps\":{\"alert\":\"test1\",\"badge\":1}}");
+    echo apns::send(token,"{\"aps\":{\"alert\":\"test2\",\"badge\":1}}");
 }catch(exception $e){
     echo $e->getMessage();
 }
