@@ -117,7 +117,7 @@ try{
 
 ### more
 
-Site: http://www.cydphp.cn
+Author website: http://www.cydphp.cn/php_apns
 
 
 
