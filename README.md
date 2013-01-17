@@ -75,6 +75,25 @@ apns{
 
 ### Demo
 
+## Production Demo
+
+```php
+
+<?php
+apns::$passphrase ="xxxxx";   //password
+apns::$certificate="./ck.pem"; //certificate file
+try{
+    apns::connect();
+    $token=str_replace(" ","","811111111111111111111111111111");
+    echo apns::send($token,"{\"aps\":{\"alert\":\"test1\",\"badge\":1}}");
+    echo apns::send($token,"{\"aps\":{\"alert\":\"test2\",\"badge\":1}}");
+}catch(exception $e){
+    echo $e->getMessage();
+}
+?>
+```
+
+## Sandbox Demo
 ```php
 <?php
 apns::$passphrase ="xxxxx";   //password
@@ -89,6 +108,7 @@ try{
 }
 ?>
 ```
+
 ### Application
 
 蜗牛帮 http://www.woniubang.com
