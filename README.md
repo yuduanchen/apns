@@ -35,6 +35,10 @@ apns{
     /* variable */
     public static string $passphrase = "" ;//ssl Password
     public static string $certificate = "" ;//ssl authorization file
+    /*
+    Sandbox : gateway.sandbox.push.apple.com:2195
+    Production : gateway.push.apple.com:2195
+    */
     public static string $gateway = "gateway.push.apple.com:2195" ;//IOS APNS URL
     /* methods */
 
