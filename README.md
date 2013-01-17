@@ -98,6 +98,7 @@ try{
 <?php
 apns::$passphrase ="xxxxx";   //password
 apns::$certificate="./ck.pem"; //certificate file
+apns::$gateway="gateway.sandbox.push.apple.com:2195";
 try{
     apns::connect();
     $token=str_replace(" ","","811111111111111111111111111111");
