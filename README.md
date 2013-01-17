@@ -6,9 +6,6 @@ APNS - Apple Push Notification Service 's php extension
 ###Maintainers
 chenyuduan(lead)
 
-###License
-PHP
-
 
 ## Install
 
