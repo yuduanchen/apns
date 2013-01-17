@@ -1,13 +1,21 @@
-apns
-====
 
-为  APNS(Apple Push Notification Service) 消息推送 所开发的 PHP扩展
+###Summary
 
-## 安装APNS
+APNS - Apple Push Notification Service 's php extension
 
-## 系统要求
+###Maintainers
+chenyuduan(lead)
 
->  php5.3.5 以上
+###License
+PHP
+
+
+## Install
+
+## Release
+
+PHP Version: PHP 5.3.5 or newer
+
 
 
 ```
@@ -20,26 +28,26 @@ $make && make install
 
 ```
 
-## 文档
+## Documentation
 
 
 
-###类摘要
+### The apns class
 ```c
 apns{
-    /* 变量 */
-    public static string $passphrase = "" ;//密码
-    public static string $certificate = "" ;//ssh授权文件
-    public static string $gateway = "gateway.push.apple.com:2195" ;//IOS APNS 服务器推送接口
-    /* 方法 */
+    /* variable */
+    public static string $passphrase = "" ;//ssl Password
+    public static string $certificate = "" ;//ssl authorization file
+    public static string $gateway = "gateway.push.apple.com:2195" ;//IOS APNS URL
+    /* methods */
 
     /***
-     * 连接apple apns服务
+     * Connection apple apns service
      */
     public static connect();
 
     /***
-     * 推送信息
+     * send notification
      * @param string $token
      * @param string $message
      */
@@ -47,24 +55,24 @@ apns{
 }
 
 ```
-### 返回值
+### Return Values
 
-1 成功
+1 success
 
-0 失败
+0 failure
 
-### 异常类型
+## Exception
 
- SSL_INIT_FAIL 初始化失败
+ SSL_INIT_FAIL  -------- Initialization failed (初始化失败)
 
- CERTIFICATE_NOT_FOUNT 找不到授权文件
+ CERTIFICATE_NOT_FOUNT -------- Can't find the authorization file (找不到授权文件)
 
- CERTIFICATE_PASSWORD_FAIL 口令不正确
+ CERTIFICATE_PASSWORD_FAIL -------- Password mistake (口令不正确)
 
- SSL_CONNECT_FAIL 连接失败
+ SSL_CONNECT_FAIL -------- Connection failed (连接失败)
 
 
-### 例子
+### Demo
 
 ```php
 <?php
@@ -80,14 +88,14 @@ try{
 }
 ?>
 ```
-### 应用案例
+### Application
 
 蜗牛帮 http://www.woniubang.com
 
 
-### 更多问题
+### more
 
-详解 http://www.cydphp.cn
+Site: http://www.cydphp.cn
 
 
 
