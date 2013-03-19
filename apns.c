@@ -70,7 +70,8 @@ void string_to_bytes( const char *token, char *bytes)
         token += 2;
     }
 }
-
+/* {{{ proto string connect()
+    Connection apple apns service  */
 PHP_METHOD(apns, connect)
 {
     zend_class_entry * _this_ce;
@@ -132,8 +133,9 @@ PHP_METHOD(apns, connect)
     }
     RETURN_TRUE;
 }
+/* }}} */
 
-/* {{{ proto string send(string str)
+/* {{{ proto string send(string token,string message)
      Send the apns data format  */
 PHP_METHOD(apns, send)
 {
